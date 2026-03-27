@@ -3,16 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Home | Dhananjaya.me</title>
+<title>Dhananjaya | Journal</title>
+
 <style>
-/* General body style */
+
+/* ===== BODY ===== */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #f5f5f5;
 }
 
-/* Header */
+/* ===== HEADER ===== */
 header {
     display: flex;
     justify-content: space-between;
@@ -23,107 +25,140 @@ header {
 }
 
 header h1 {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 22px;
 }
 
-header nav a {
+nav a {
     margin: 0 10px;
     text-decoration: none;
     color: #555;
-    font-weight: 500;
 }
 
-header nav a:hover {
+nav a:hover {
     color: #007bff;
 }
 
-/* About Me container: text left, image right */
+/* ===== ABOUT SECTION ===== */
 .about-container {
     display: flex;
-    justify-content: space-between; /* text left, image right */
     align-items: center;
-    min-height: 70vh;
-    padding: 40px 50px;
-    gap: 40px; /* space between text and image */
-    flex-wrap: wrap; /* responsive wrap */
+    justify-content: space-between;
+    padding: 60px;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-/* About Me text box */
-.about-right {
-    flex: 1;                /* take left space */
+.about-text {
+    flex: 1;
     max-width: 500px;
-    background: white;
-    padding: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    border-radius: 10px;
 }
 
-/* Heading */
-.about-right h2 {
+.about-text h2 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: #333;
 }
 
-/* Paragraph */
-.about-right p {
+.about-text p {
     font-size: 18px;
     line-height: 1.6;
+}
+
+/* ===== IMAGE (RIGHT SIDE) ===== */
+.about-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%; /* circle */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== DAILY UPDATES ===== */
+.updates {
+    padding: 40px 60px;
+}
+
+.updates h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* ===== UPDATE CARD ===== */
+.update-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #007bff;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.update-card h3 {
+    margin: 0 0 10px;
+}
+
+.update-card p {
+    margin: 0;
     color: #555;
 }
 
-/* Image box */
-.about-image {
-    flex: 1;                 /* take right space */
-    max-width: 300px;        /* square image size */
-    aspect-ratio: 1 / 1;     /* 1:1 ratio */
-    border-radius: 50%;       /* circular image */
-    object-fit: cover;        /* crop to fit container */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* Responsive for mobile */
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
     .about-container {
-        flex-direction: column; /* stack text and image */
-        padding: 20px;
+        flex-direction: column;
+        text-align: center;
     }
+
     .about-image {
-        max-width: 70%;
         margin-top: 20px;
     }
-    .about-right {
-        max-width: 100%;
-    }
 }
+
 </style>
 </head>
+
 <body>
 
+<!-- ===== HEADER ===== -->
 <header>
     <h1>Dhananjaya.me</h1>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="undergraduate.html">Undergraduate Life</a>
-        <a href="events.html">Participated Events</a>
-        <a href="projects.html">My Projects</a>
+        <a href="#">Home</a>
+        <a href="#">Updates</a>
+        <a href="#">Projects</a>
     </nav>
 </header>
 
-<!-- About Me Section: left text, right image -->
+<!-- ===== ABOUT SECTION ===== -->
 <section class="about-container">
-    <div class="about-right">
+    
+    <div class="about-text">
         <h2>About Me</h2>
         <p>
-            Hi, I’m <strong>Dhananjaya Thennakoon</strong>, an Artificial Intelligence undergraduate at NSBM <br>
-            and a passionate Web Developer. <br>I love creating smart solutions with AI and web technologies. 
-            I’m also the founder of <strong>Zentrix Solutions</strong>, <br>where I help businesses grow online 
-            through modern, high-performance websites.<br> This website is my space to share my journey, projects, 
-            achievements, and future goals.
+            Hi, I’m <strong>Dhananjaya Thennakoon</strong>, an Artificial Intelligence undergraduate 
+            and a passionate Web Developer. I love building smart solutions using AI and modern 
+            web technologies. I’m also the founder of <strong>Zentrix Solutions</strong>.
         </p>
     </div>
-    <img src=" WhatsApp Image 2026-03-05 at 9.05.12 PM (1).jpegWhatsApp Image 2026-03-05 at 9.05.12 PM (1).jpeg " alt="Dhananjaya" class="about-image">
+
+    <img src="your-image.jpg" alt="My Photo" class="about-image">
+
+</section>
+
+<!-- ===== DAILY UPDATES ===== -->
+<section class="updates">
+
+    <h2>Daily Updates</h2>
+
+    <div class="update-card">
+        <h3>March 27, 2026</h3>
+        <p>Today I designed my personal website and learned how to align content using flexbox.</p>
+    </div>
+
+    <div class="update-card">
+        <h3>March 26, 2026</h3>
+        <p>Worked on AI concepts and practiced Python coding for my university exams.</p>
+    </div>
+
 </section>
 
 </body>
