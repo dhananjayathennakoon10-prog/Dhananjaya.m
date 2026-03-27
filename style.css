@@ -65,3 +65,15 @@ nav a:hover {
 section {
     padding: 60px;
 }
+/* Image under About Me text */
+.about-right .about-image {
+    width: 100%;          /* full width of the container */
+    max-width: 300px;     /* optional maximum size */
+    height: auto;         /* maintain aspect ratio */
+    margin-top: 20px;     /* space between text and image */
+    border-radius: 10px;  /* rounded corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* subtle shadow */
+    display: block;
+    margin-left: auto;    /* center the image horizontally */
+    margin-right: auto;
+}
