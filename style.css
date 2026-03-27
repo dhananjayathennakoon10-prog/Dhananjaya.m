@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+}
+/* About Me container */
+.about-container {
+    display: flex;
+    justify-content: flex-end; /* pushes content to the right side */
+    align-items: center;       /* vertically center on page */
+    min-height: 100vh;         /* full page height */
+    padding: 40px;             /* space around */
+}
+
+/* About Me box */
+.about-right {
+    max-width: 500px;          /* limits width for readability */
+    background: white;         /* box background */
+    padding: 30px;             /* inner spacing */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* subtle shadow */
+    border-radius: 10px;       /* rounded corners */
+}
+
+/* Heading style */
+.about-right h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Paragraph style */
+.about-right p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+/* Logo */
+h1 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+/* Navbar */
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #555;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Section */
+section {
+    padding: 60px;
+}
